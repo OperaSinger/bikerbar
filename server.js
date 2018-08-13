@@ -5,7 +5,6 @@ require("dotenv").config();
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var orm = require("./config/orm.js");
 
 
 
@@ -27,10 +26,6 @@ require("./app/routing/html-routes")(app);
 
 // For each of the following select methods, a string argument containing wildcard character ("*")
 // could work in most environments, but some MySQL servers (like MAMP) will return an error.
-
-// Console log all the bike's.
-// orm.selectAll("name", "bikeType", "photo", "ridden");
-
 
 // Starts the server to begin listening
 // =============================================================

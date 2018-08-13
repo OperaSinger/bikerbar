@@ -12,15 +12,6 @@ module.exports = function (app) {
 
         })
     });
-    // setting route to get ALL bikes and send them to the second page - bikes.html
-    app.get("/api/allbikes", function (req, res) {
-        connection.query("SELECT * FROM bikeList", function (err, data) {
-            if (err) console.log(err);
-
-            res.json(data);
-
-        })
-    });
 
     // setting route to receive data from front end and store in database
     app.post("/api/bikes", function (req, res) {

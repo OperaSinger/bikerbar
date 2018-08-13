@@ -6,7 +6,10 @@ $(document).ready(function () {
 
     $.get("/api/bikes", function (data) {
 
-        console.log(data);
+        // console.log(data);
+
+        // Create HTML dynamically for bikes ridden and unridden for
+        // both the BIKES page, and for the Root directory
 
         for (var i = 0; i < data.length; i++) {
 
@@ -19,7 +22,7 @@ $(document).ready(function () {
         </div>`);
 
             let cardRidden = (`<div class="card" id="${data[i].ID}><div class="card-body">
-            <img src="${data[i].photo}" id="imgL">
+            <img src="${data[i].photo}" id="imgR">
             <h5 class="newName">${data[i].name}</h5>
             <p class="card-text">${data[i].bikeType}</p>
         </div>
@@ -28,44 +31,18 @@ $(document).ready(function () {
             if (data[i].ridden == 0) {
 
                 $("#bikeNotRid").append(cardUnridden);
+                $("#allBikes").append(cardUnridden);
+
             }
             else {
                 $("#bikeRid").append(cardRidden);
+                $("#allBikes").append(cardRidden);
+
             }
         }
     })
 
-    $.get("/api/allbikes", function (data) {
-
-        for (var i = 0; i < data.length; i++) {
-
-            let cardUnridden = (`<div class="card" id="${data[i].ID}><div class="card-body">
-            <img src="${data[i].photo}" id="imgL">
-            <h5 class="newName">${data[i].name}</h5>
-            <p class="card-text">${data[i].bikeType}</p>
-            <button type="submit" id="${data[i].ID}" class="ridden btn btn-primary">Ride!</button>
-        </div>
-        </div>`);
-
-            let cardRidden = (`<div class="card" id="${data[i].ID}><div class="card-body">
-            <img src="${data[i].photo}" id="imgL">
-            <h5 class="newName">${data[i].name}</h5>
-            <p class="card-text">${data[i].bikeType}</p>
-        </div>
-        </div>`);
-
-            console.log(data);
-
-            if (data[i].ridden == 0) {
-                $("#allBikes").append(cardUnridden);
-            }
-            else if (data[i].ridden == 1) {
-                $("#allBikes").append(cardRidden);
-            }
-
-        };
-    })
-
+    // take in data for a new bike to post to the server
 $(document).on("click", ".ridden", function(){
     
     var bikeid = $(this).attr("id");
@@ -82,7 +59,7 @@ $(document).on("click", ".ridden", function(){
     );
 })
  
-
+// enter bike information into the database
     $(".enterBike").on("submit", function () {
        
         var bikeObj = {
