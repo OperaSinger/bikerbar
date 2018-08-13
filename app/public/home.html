@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bikes.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-billboard">
+            <div class="container2">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 style="text-shadow: 2px 2px 2px white">Biker Bar</h2>
+                        <p style="text-shadow: 2px 2px 2px white">
+                            Your one-stop shop for creating, choosing and riding the bike of your choice.
+                            <br>click here to see a full list of current bikes.
+                        </p>
+                        <a href="/bikes">
+                            <button type="button" class="btn btn-primary">Current Bikes</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <form class="enterBike">
+                    <div class="form-group form-row">
+                        <label for="newBikeName" style="text-shadow: 2px 2px 2px white">Bike Name</label>
+                        <textarea class="form-control" id="newBikeName" rows="1"></textarea>
+                    </div>
+                    <div class="form-group form-row">
+                        <label for="newBikeType" style="text-shadow: 2px 2px 2px white">Bike Type</label>
+                        <textarea class="form-control" id="newBikeType" rows="1"></textarea>
+                    </div>
+                    <div class="form-group form-row">
+                        <label for="newBikePhoto" style="text-shadow: 2px 2px 2px white">Photo URL:</label>
+                        <textarea class="form-control" id="newBikePhoto" rows="1"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit Bike</button>
+                </form>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5" id="newbikes">
+                <h2>New Bikes</h2>
+                <div id="bikeNotRid">
+
+                    <!-- All bikes NOT ridden will be inserted here -->
+
+                </div>
+            </div>
+            <div class="col-md-5" id="bikesRidden">
+                <h2 style="text-shadow: 2px 2px 2px white">Bikes Already Ridden</h2>
+                <div id="bikeRid">
+
+                    <!-- All bikes that have been ridden are inserted here -->
+
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+
+    </div>
+   
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="handlebars-v4.0.11.js"></script> -->
+    <script src="assets/js/bikes.js"></script>
+    
+</body>
+
+</html>

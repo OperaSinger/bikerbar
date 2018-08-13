@@ -1,0 +1,30 @@
+{
+  "name": "bikerbar",
+  "version": "1.0.0",
+  "description": "An app encorporating MYSQL and Handlebars",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OperaSinger/bikerbar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OperaSinger/bikerbar/issues"
+  },
+  "homepage": "https://github.com/OperaSinger/bikerbar#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "env": "0.0.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "mysql": "^2.16.0"
+  }
+}
