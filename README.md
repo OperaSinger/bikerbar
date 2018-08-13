@@ -1,7 +1,3 @@
-Editor.md
-Open source online Markdown editor.
-
-
 #Biker Bar
 ​
 - an app encorporating MYSQL to display content from the database - in this case, bikes (or other human powered pedal machines) - of all types - and to ride them or leave them be.
@@ -27,7 +23,7 @@ When all files are installed, at the command line, start the app in your termina
 ​
 localhost://3000
 ​
-<a href=" ">click here to view a GIF of the app in action</a>
+<a href=" ">click here to view a mp4 of the app in action</a>
 ​
 ##Built with:
 ​
