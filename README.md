@@ -23,7 +23,7 @@ When all files are installed, at the command line, start the app in your termina
 ​
 localhost://3000
 ​
-<a href=" ">click here to view a mp4 of the app in action</a>
+<a href="https://github.com/OperaSinger/bikerbar/blob/master/biker-bar.mp4">click here to view a mp4 of the app in action</a>
 ​
 ##Built with:
 ​
